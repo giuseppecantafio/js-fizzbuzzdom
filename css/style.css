@@ -1,11 +1,12 @@
-h1{
-    font-size: 2rem;
-    color: rgb(132, 1, 240);
-    padding-bottom: 50px;
+body{
+    font-family: 'Righteous', cursive;
+}
 
+h1{
+    color: red;
+    padding-bottom: 50px;
 }
 .text-container{
-    
     height: 50px;
     margin: 0 auto;
     text-align: center;
@@ -15,19 +16,34 @@ h1{
     background-color: rgb(88, 211, 143);
 }
 
+/* STILI PER FIZZ e BUZZ */
 
+.style-fizz{
+    background-color: blueviolet;
+    border-color: blue;
+}
+.style-buzz{
+    background-color: goldenrod;
+    border-color: yellow;
+}
+.style-fizzbuzz{
+    background-color: pink;
+    border-color: deeppink;
+    color: deeppink;
+    
+}
 
 /* MEDIA QUERY */
 
 @media screen and (min-width: 0px) and (max-width: 767px) {  
-    h1, p {font-size:1rem;} 
+    h1, p {font-size:2rem;} 
 }
 @media screen and (min-width: 768px) {  
-    h1, p {font-size:1.5rem;}
+    h1, p {font-size:2.1rem;}
 }
 @media screen and (min-width: 992px) { 
-    h1, p {font-size:2rem;} 
+    h1, p {font-size:2.2rem;} 
 } 
 @media screen and (min-width: 1200px) {  
-    h1, p {font-size:2.5rem;}  
+    h1, p {font-size:2.7rem;}  
 }

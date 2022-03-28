@@ -42,11 +42,53 @@
         //     </div>
         // </div>
 
+// const father = document.getElementById('container');
+// father.setAttribute('class', 'container text-center mt-5');
+
+// const h1 = document.createElement('h1');
+// h1.innerHTML = 'Esercizio Fizz and Buzz';
+// father.append(h1);
+
+// const row = document.createElement('div');
+// row.setAttribute('class', 'row g-3')
+// father.append(row);
+
+// let maxNum = 100;
+
+// for (a = 1; a <= maxNum; a++){
+//     const col = document.createElement('div');
+//     col.setAttribute('class','col-12 col-sm-6 col-md-4 col-lg-3 gap-2');
+
+//     const p = document.createElement('p');
+//     p.setAttribute('class','text-container rounded-pill');
+
+
+//     if (a % 3 === 0) {
+//         p.innerHTML = `${a} è Fizz`;
+//         if (a % 5 === 0) {
+//             p.innerHTML = `${a} è FizzBuzz`;
+//         }
+//     } else if (a % 5 === 0) { 
+//         p.innerHTML = `${a} è Buzz`;
+//         if (a % 3 === 0) {
+//             p.innerHTML = `${a} è FizzBuzz`;
+//         }
+//     } else {
+//         p.innerHTML = `${a}`;
+//     }
+
+//     col.append(p);
+//     row.append(col);
+// };
+
+////////// MILESTONE 3
+// Applica uno stile differente a seconda del valore dell'indice per i multipli di 3, per i multipli di 5 e per i valori che sono sia multipli // di 3 che di 5.
+
 const father = document.getElementById('container');
 father.setAttribute('class', 'container text-center mt-5');
 
 const h1 = document.createElement('h1');
-h1.innerHTML = 'Esercizio Fizz and Buzz';
+h1.innerHTML = 'Esercizio Fizz e Buzz';
 father.append(h1);
 
 const row = document.createElement('div');
@@ -65,13 +107,17 @@ for (a = 1; a <= maxNum; a++){
 
     if (a % 3 === 0) {
         p.innerHTML = `${a} è Fizz`;
+        p.classList.add('style-fizz');
         if (a % 5 === 0) {
             p.innerHTML = `${a} è FizzBuzz`;
+            p.classList.add('style-fizzbuzz');
         }
     } else if (a % 5 === 0) { 
         p.innerHTML = `${a} è Buzz`;
+        p.classList.add('style-buzz');
         if (a % 3 === 0) {
             p.innerHTML = `${a} è FizzBuzz`;
+            p.classList.add('style-fizzbuzz');
         }
     } else {
         p.innerHTML = `${a}`;
