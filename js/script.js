@@ -18,10 +18,33 @@
 // row.setAttribute('class', 'row g-3')
 // father.append(row);
 
-/////////// ESERCIZIO BASE
+/////////// Esercizio 1
+// Scrivi un programma che stampi in console i numeri da 1 a 100.
+
+// let maxNum = 100;
+
+// for (a = 1; a <= maxNum; a++){
+//     console.log(a);
+// };
+
+////////// MILESTONE 1
+// Per i multipli di 3 stampi “Fizz” al posto del numero e per i multipli di 5 stampi Buzz.
+// Per i numeri che sono sia multipli di 3 che di 5 stampi FizzBuzz.
 
 let maxNum = 100;
 
 for (a = 1; a <= maxNum; a++){
-    console.log(a);
+    if (a % 3 === 0) {
+        console.log(a + ' ' + 'è Fizz');
+        if (a % 5 === 0) {
+            console.log(a + ' ' + 'è FizzBuzz');
+        }
+    } else if (a % 5 === 0) { 
+        console.log (a + ' ' + 'è Buzz');
+        if (a % 3 === 0) {
+            console.log(a + ' ' + 'è FizzBuzz');
+        }
+    } else {
+        console.log(a);
+    }
 };
